@@ -21,20 +21,23 @@
 - **課題：**
   - `readability.c`: 文章の読みやすさを評価
   - `substitution.c`: 暗号化の実装
+  - `caesar.c`: シーザー暗号（文字のシフト暗号）の実装
 
 ---
 
 ### Week 3: アルゴリズム
 - **内容：** ソート（bubble, selection, insertion）、探索（linear, binary）などのアルゴリズムを学ぶ。
 - **課題：**
-  - `tideman.c`: 投票システムの実装（未完成）
   - `plurality.c`: 最も得票数の多い候補者の決定
+  - `runoff.c`: 投票システム（選挙）の実装 
+  - `tideman.c`: 投票システムの実装（未完成）
 
 ---
 
 ### Week 4: メモリ
 - **内容：** ポインタ、文字列のメモリ構造、ファイル操作、メモリ管理（malloc, free）など。
 - **課題：**
+  - `volume`: `.wav`ファイルの音量を変更するプログラム
   - `filter`: 画像フィルタ処理
   - `recover`: 破損した画像ファイルの復元
 
@@ -43,8 +46,8 @@
 ### Week 5: データ構造
 - **内容：** リンクリスト（linked list）、ツリー（tree）、ハッシュテーブル（hash table）の基礎。
 - **課題：**
+  - `inheritance.c`: 遺伝情報（血液型）の継承をシミュレーションする再帰的な家系プログラム
   - `speller.c`: スペルチェッカーの実装
-
 ---
 
 ### Week 6: Pythonへの移行
@@ -52,14 +55,29 @@
 - **課題：** C言語の課題の一部をPythonで再実装
   - `hello.py`: Pythonによる「Hello, World!」
   - `mario.py`: ピラミッド描画プログラム
-  - `credit.py`: クレジットカード番号の有効性チェック
-
+  - `world-cup.py`: ワールドカップのトーナメントをシミュレートし、確率に基づいて勝者を決定
+  - `cash.py`: 最小のコインを計算
+  - `credit.py`: クレジットカード番号の有効性チェック（未完成）
+  - `dna.py`: DNA配列の比較
+  - `readability.py`: 文章の読みやすさを評価
 ---
 
-### Week 7: 正規表現とデータの扱い
-- **内容：** 正規表現（regex）、CSVやJSONファイルの操作、データの読み書きと整形。
+### Week 7: SQLとデータベース
+- **内容：**  
+  SQL（Structured Query Language）を使って、リレーショナルデータベースの操作方法を学習。  
+  以下のトピックについて実践的に理解を深めました：
+  - テーブルの作成とリレーションの設計（`CREATE`, `FOREIGN KEY`など）
+  - データ型と制約（`TEXT`, `INTEGER`, `NOT NULL`, `UNIQUE`, `CHECK`など）
+  - データの検索と集計（`SELECT`, `WHERE`, `JOIN`, `GROUP BY`, `HAVING`, `ORDER BY`）
+  - トランザクションと排他制御（`BEGIN`, `COMMIT`, `ROLLBACK`）
+  - パフォーマンスのためのインデックス設計（`CREATE INDEX`）
+  - SQLインジェクション攻撃の危険性とその対策
+
 - **課題：**
-  - `movies.csv` や `students.csv` を使ったデータ検索や変換プログラム
+  - `movie` , `song` を用いたデータベース構築と検索
+  - `fiftyville`: 犯罪の犯人を特定するために、複数のSQLテーブル（電話記録、フライト、ATM取引など）を照合して手がかりを見つける推理型のデータ分析課題
+  - 複数テーブルを結合し、必要な情報を抽出するクエリの作成
+  - 複雑な条件付きの集計・ソート処理の実装
 
 ---
 
