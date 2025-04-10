@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>今日の日付</title>
+  <style>
+    body { font-family: sans-serif; background: #f0f8ff; text-align: center; padding: 2rem; }
+    h1 { color: #333; }
+    #date { font-size: 1.5rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>今日の日付は？</h1>
+  <button onclick="showDate()">表示</button>
+  <div id="date"></div>
+
+  <script>
+    function showDate() {
+      const today = new Date();
+      const y = today.getFullYear();
+      const m = today.getMonth() + 1;
+      const d = today.getDate();
+      document.getElementById("date").textContent = `${y}年${m}月${d}日`;
+    }
+  </script>
+</body>
+</html>

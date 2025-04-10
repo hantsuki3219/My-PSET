@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <style>
+    body { font-family: sans-serif; background: #1d1d20; padding: 2rem; }
+    h1 { color: #ffffff; }
+    ul { list-style: none; padding: 0; }
+    li { background: #ffbebe; padding: 0.5rem; margin: 0.5rem 0; display: flex; justify-content: space-between; border: 1px solid #ccc; }
+    .done { text-decoration: line-through; color: #3330ff; }
+  </style>
+</head>
+<body>
+  <h1>To-Do リスト</h1>
+  <input id="taskInput" type="text" placeholder="タスクを入力" />
+  <button onclick="addTask()">追加</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById("taskInput");
+      const task = input.value.trim();
+      if (!task) return;
+
+      const li = document.createElement("li");
+      li.textContent = task;
+
+      li.addEventListener("click", () => {
+        li.classList.toggle("done");
+      });
+
+      const delBtn = document.createElement("button");
+      delBtn.textContent = "削除";
+      delBtn.onclick = () => li.remove();
+      li.appendChild(delBtn);
+
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
