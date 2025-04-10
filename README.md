@@ -1,4 +1,4 @@
-# CS50 Problem Sets (Week 1 - Week 7) ```＊課題は.zipに入っています```
+# CS50 Problem Sets (Week 1 - Week 7)
 
 このリポジトリには、Harvard大学のCS50（コンピュータサイエンス入門）コースの課題（Problem Sets）を週ごとにまとめてあります。
 各週の課題はC言語（Week 1 - Week 3）とPython（Week 6）、およびアルゴリズムやデータ構造の基本的な理解を深めるために設計されています。
